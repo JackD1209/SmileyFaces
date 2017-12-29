@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Smiley Faces View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="SmileyFacesViewController" id="BYZ-38-t0r" customClass="SmileyFacesViewController" customModule="SmileyFaces" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lv6-Np-v1r">
+                                <rect key="frame" x="149" y="20" width="76" height="30"/>
+                                <state key="normal" title="Take Photo"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gni-p9-NqF">
+                                <rect key="frame" x="0.0" y="429" width="375" height="238"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="excited" translatesAutoresizingMaskIntoConstraints="NO" id="Zeo-2x-Tn3">
+                                        <rect key="frame" x="147" y="50" width="80" height="80"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="happy" translatesAutoresizingMaskIntoConstraints="NO" id="PMw-nw-69w">
+                                        <rect key="frame" x="287" y="50" width="80" height="80"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dead" translatesAutoresizingMaskIntoConstraints="NO" id="W62-vW-wK1">
+                                        <rect key="frame" x="8" y="50" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="3TD-QI-Fs5"/>
+                                            <constraint firstAttribute="width" constant="80" id="xuv-1y-12d"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wink" translatesAutoresizingMaskIntoConstraints="NO" id="nhu-75-wp8">
+                                        <rect key="frame" x="287" y="138" width="80" height="80"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tongue" translatesAutoresizingMaskIntoConstraints="NO" id="VyQ-4S-haY">
+                                        <rect key="frame" x="147" y="138" width="80" height="80"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="down_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="kms-Bq-P2v">
+                                        <rect key="frame" x="177" y="8" width="20" height="14"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="14" id="2in-dJ-QSW"/>
+                                            <constraint firstAttribute="width" constant="20" id="s3x-Rg-2VW"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sad" translatesAutoresizingMaskIntoConstraints="NO" id="I4p-ET-WsA">
+                                        <rect key="frame" x="8" y="138" width="80" height="80"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.94109421968460083" green="0.94122928380966187" blue="0.94106453657150269" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="PMw-nw-69w" firstAttribute="height" secondItem="W62-vW-wK1" secondAttribute="height" id="0f1-RJ-4ub"/>
+                                    <constraint firstItem="I4p-ET-WsA" firstAttribute="leading" secondItem="W62-vW-wK1" secondAttribute="leading" id="6pj-4l-PST"/>
+                                    <constraint firstItem="kms-Bq-P2v" firstAttribute="centerX" secondItem="Gni-p9-NqF" secondAttribute="centerX" id="8Fp-ZT-bAn"/>
+                                    <constraint firstItem="nhu-75-wp8" firstAttribute="height" secondItem="W62-vW-wK1" secondAttribute="height" id="9EE-o4-c9I"/>
+                                    <constraint firstItem="PMw-nw-69w" firstAttribute="top" secondItem="W62-vW-wK1" secondAttribute="top" id="BN7-tc-mDQ"/>
+                                    <constraint firstItem="nhu-75-wp8" firstAttribute="top" secondItem="I4p-ET-WsA" secondAttribute="top" id="BcP-jC-GpK"/>
+                                    <constraint firstItem="Zeo-2x-Tn3" firstAttribute="height" secondItem="W62-vW-wK1" secondAttribute="height" id="DmM-HP-8su"/>
+                                    <constraint firstItem="VyQ-4S-haY" firstAttribute="leading" secondItem="Zeo-2x-Tn3" secondAttribute="leading" id="G9C-tf-HpU"/>
+                                    <constraint firstItem="nhu-75-wp8" firstAttribute="trailing" secondItem="PMw-nw-69w" secondAttribute="trailing" id="GRb-cQ-qng"/>
+                                    <constraint firstItem="I4p-ET-WsA" firstAttribute="width" secondItem="W62-vW-wK1" secondAttribute="width" id="GoN-hK-bZe"/>
+                                    <constraint firstItem="VyQ-4S-haY" firstAttribute="height" secondItem="W62-vW-wK1" secondAttribute="height" id="KwK-6l-Nkh"/>
+                                    <constraint firstItem="Zeo-2x-Tn3" firstAttribute="centerX" secondItem="Gni-p9-NqF" secondAttribute="centerX" id="SBd-GZ-R6j"/>
+                                    <constraint firstItem="nhu-75-wp8" firstAttribute="width" secondItem="W62-vW-wK1" secondAttribute="width" id="T7G-O3-tSd"/>
+                                    <constraint firstAttribute="height" constant="238" id="WAu-df-Jms"/>
+                                    <constraint firstAttribute="trailing" secondItem="PMw-nw-69w" secondAttribute="trailing" constant="8" id="XyI-yR-0YN"/>
+                                    <constraint firstItem="I4p-ET-WsA" firstAttribute="height" secondItem="W62-vW-wK1" secondAttribute="height" id="Zw9-5X-Spg"/>
+                                    <constraint firstItem="Zeo-2x-Tn3" firstAttribute="top" secondItem="W62-vW-wK1" secondAttribute="top" id="cah-Hm-FwV"/>
+                                    <constraint firstItem="PMw-nw-69w" firstAttribute="width" secondItem="W62-vW-wK1" secondAttribute="width" id="gqd-4J-fd0"/>
+                                    <constraint firstItem="W62-vW-wK1" firstAttribute="leading" secondItem="Gni-p9-NqF" secondAttribute="leading" constant="8" id="jvf-dB-AXM"/>
+                                    <constraint firstItem="VyQ-4S-haY" firstAttribute="top" secondItem="I4p-ET-WsA" secondAttribute="top" id="nrH-KN-YNx"/>
+                                    <constraint firstItem="Zeo-2x-Tn3" firstAttribute="width" secondItem="W62-vW-wK1" secondAttribute="width" id="rAs-vG-4H2"/>
+                                    <constraint firstItem="VyQ-4S-haY" firstAttribute="width" secondItem="W62-vW-wK1" secondAttribute="width" id="wIV-QA-nBb"/>
+                                    <constraint firstItem="kms-Bq-P2v" firstAttribute="top" secondItem="Gni-p9-NqF" secondAttribute="top" constant="8" id="xFU-dZ-wF0"/>
+                                    <constraint firstAttribute="bottom" secondItem="I4p-ET-WsA" secondAttribute="bottom" constant="20" id="y33-ik-e1X"/>
+                                    <constraint firstItem="I4p-ET-WsA" firstAttribute="top" secondItem="W62-vW-wK1" secondAttribute="bottom" constant="8" id="yd0-e2-Eil"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="kaJ-5Z-ifn" appends="YES" id="GBZ-Hv-g1f"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Gni-p9-NqF" secondAttribute="bottom" id="6FT-mR-Ffk"/>
+                            <constraint firstItem="Gni-p9-NqF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6l1-Zr-cCj"/>
+                            <constraint firstItem="lv6-Np-v1r" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Oce-4u-DMj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gni-p9-NqF" secondAttribute="trailing" id="cfz-hk-C5o"/>
+                            <constraint firstItem="lv6-Np-v1r" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="l7V-Q7-Km1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="arrowImage" destination="kms-Bq-P2v" id="kHD-F2-qoc"/>
+                        <outlet property="deadImage" destination="W62-vW-wK1" id="mN4-oH-fcp"/>
+                        <outlet property="excitedImage" destination="Zeo-2x-Tn3" id="Wxw-PX-3HB"/>
+                        <outlet property="happyImage" destination="PMw-nw-69w" id="RyG-ck-4Ng"/>
+                        <outlet property="sadImage" destination="I4p-ET-WsA" id="0Cc-eA-ZaC"/>
+                        <outlet property="tongueImage" destination="VyQ-4S-haY" id="lwT-aW-r2P"/>
+                        <outlet property="trayView" destination="Gni-p9-NqF" id="IdY-w7-V1V"/>
+                        <outlet property="winkImage" destination="nhu-75-wp8" id="Nq0-v8-clD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="kaJ-5Z-ifn">
+                    <connections>
+                        <action selector="didPanTray:" destination="BYZ-38-t0r" id="9OE-gF-1yg"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="31.934032983508249"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dead" width="60" height="60"/>
+        <image name="down_arrow" width="10" height="7"/>
+        <image name="excited" width="60" height="60"/>
+        <image name="happy" width="60" height="60"/>
+        <image name="sad" width="60" height="60"/>
+        <image name="tongue" width="60" height="60"/>
+        <image name="wink" width="60" height="60"/>
+    </resources>
+</document>
